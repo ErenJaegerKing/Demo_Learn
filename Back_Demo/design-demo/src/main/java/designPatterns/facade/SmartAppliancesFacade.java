@@ -12,13 +12,13 @@ public class SmartAppliancesFacade {
     }
 
     public void say(String msg) {
-//        if (msg.contains("打开")) {
-//            on();
-//        } else if (msg.contains("关闭")) {
-//            off();
-//        } else {
-//            System.out.println("我还听不懂你说的！！！");
-//        }
+        if (msg.contains("打开")) {
+            on();
+        } else if (msg.contains("关闭")) {
+            off();
+        } else {
+            System.out.println("我还听不懂你说的！！！");
+        }
     }
 
     private void on() {
