@@ -26,6 +26,7 @@ public class SmartAppliancesFacade {
         light.on();
         tv.on();
         airCondition.on();
+
     }
 
     private void off() {
