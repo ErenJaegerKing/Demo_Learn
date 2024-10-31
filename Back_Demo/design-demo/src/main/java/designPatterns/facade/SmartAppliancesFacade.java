@@ -22,10 +22,10 @@ public class SmartAppliancesFacade {
     }
 
     private void on() {
-        System.out.println("起床了");
-        light.on();
-        tv.on();
-        airCondition.on();
+//        System.out.println("起床了");
+//        light.on();
+//        tv.on();
+//        airCondition.on();
 
     }
 
