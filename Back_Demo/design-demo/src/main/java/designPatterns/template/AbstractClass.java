@@ -1,5 +1,7 @@
 package designPatterns.template;
 
+import java.io.InputStream;
+
 public abstract class AbstractClass {
     public final void cookProcess() {
         this.pourOil();
@@ -24,4 +26,6 @@ public abstract class AbstractClass {
     public void fry() {
         System.out.println("炒啊炒啊炒到熟啊");
     }
+
+
 }
