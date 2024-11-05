@@ -1,8 +1,9 @@
 package designPatterns.responsibility;
 
-public class GroupLeader extends Handler {
+//小组长处理1-3天的请假
+public class GroupLeader extends Handler{
     public GroupLeader() {
-        super(Handler.NUM_ONE, Handler.NUM_THREE);
+        super(Handler.NUM_ONE,Handler.NUM_THREE);
     }
 
     @Override

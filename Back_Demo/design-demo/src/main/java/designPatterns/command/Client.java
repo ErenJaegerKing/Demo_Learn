@@ -23,5 +23,6 @@ public class Client {
         invoker.setCommand(cmd2);
 
         invoker.orderUp();
+
     }
 }

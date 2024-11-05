@@ -19,22 +19,20 @@ public abstract class Handler {
         this.numEnd = numEnd;
     }
 
-    public void setNextHandler(Handler nextHandler){
+    public void setNextHandler(Handler nextHandler) {
         this.nextHandler = nextHandler;
     }
 
-    public final void submit(LeaveRequest leave){
-        if(0 == this.numStart){
+    public final void submit(LeaveRequest leave) {
+        if (this.numStart == 0) {
             return;
         }
-
-        if(leave.getNum() >= this.numStart){
+        if (leave.getNum() >= this.numStart) {
             this.handleLeave(leave);
-
-            if(null != this.nextHandler && leave.getNum() > numEnd){
+            if (this.nextHandler != null && leave.getNum() > numEnd) {
                 this.nextHandler.submit(leave);
             } else {
-                System.out.println("流程结束");
+                System.out.println("流程结束了");
             }
         }
     }
