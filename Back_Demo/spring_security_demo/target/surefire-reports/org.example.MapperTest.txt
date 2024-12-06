@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: org.example.MapperTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.833 s <<< FAILURE! - in org.example.MapperTest
+TestUserMapper  Time elapsed: 2.157 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'spring_security_demo'
+### The error may exist in org/example/mapper/UserMapper.java (best guess)
+### The error may involve org.example.mapper.UserMapper.selectList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'spring_security_demo'
+	at org.example.MapperTest.TestUserMapper(MapperTest.java:24)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'spring_security_demo'
+### The error may exist in org/example/mapper/UserMapper.java (best guess)
+### The error may involve org.example.mapper.UserMapper.selectList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'spring_security_demo'
+	at org.example.MapperTest.TestUserMapper(MapperTest.java:24)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'spring_security_demo'
+	at org.example.MapperTest.TestUserMapper(MapperTest.java:24)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'spring_security_demo'
+	at org.example.MapperTest.TestUserMapper(MapperTest.java:24)
+
